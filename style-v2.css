@@ -3,8 +3,8 @@
     --bg-card: #FFFFFF;
     --text-main: #1A1A1A;
     --text-muted: #4A4A4A;
-    --neon-blue: #192F61;
-    --cyber-purple: #D30037;
+    --neon-blue: #3498DB;
+    --cyber-purple: #9B59B6;
     --glass-bg: rgba(255, 255, 255, 0.85);
     --glass-border: rgba(0, 0, 0, 0.08);
 }
@@ -177,7 +177,7 @@ a { text-decoration: none; color: inherit; }
 /* Buttons */
 .btn { padding: 1rem 2.5rem; border-radius: 30px; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; cursor: pointer; display: inline-block; font-family: 'Inter', sans-serif; }
 .btn-primary { background: var(--text-main); color: var(--bg-dark); border: none; }
-.btn-primary:hover { background: var(--neon-blue); box-shadow: 0 5px 20px rgba(25, 47, 97, 0.3); transform: translateY(-2px); }
+.btn-primary:hover { background: var(--neon-blue); box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3); transform: translateY(-2px); }
 
 /* Glassmorphism */
 .glass-card {
@@ -210,7 +210,7 @@ section { padding: 120px 0; }
     background: var(--bg-card); border: 1px solid var(--neon-blue); border-radius: 12px;
     padding: 1.5rem 1rem; text-align: center; position: relative; margin-bottom: 2.5rem;
     width: 100%; min-height: 120px; display: flex; flex-direction: column; justify-content: center;
-    box-shadow: inset 0 0 20px rgba(25,47,97,0.05);
+    box-shadow: inset 0 0 20px rgba(52,152,219,0.05);
 }
 .career-quote-card::before, .career-quote-card::after {
     content: '"'; position: absolute; font-size: 3rem; color: var(--neon-blue);
@@ -236,9 +236,9 @@ section { padding: 120px 0; }
     transition: transform 0.3s ease;
 }
 .career-stair:hover { filter: brightness(1.2); transform: translateY(-5px); }
-.stair-1 { height: 80px; background: linear-gradient(180deg, rgba(25,47,97,0.8), rgba(255,255,255,0.8)); }
-.stair-2 { height: 130px; background: linear-gradient(180deg, rgba(16,30,80,0.8), rgba(255,255,255,0.8)); }
-.stair-3 { height: 190px; background: linear-gradient(180deg, rgba(211,0,55,0.8), rgba(255,255,255,0.8)); }
+.stair-1 { height: 80px; background: linear-gradient(180deg, rgba(52,152,219,0.8), rgba(255,255,255,0.8)); }
+.stair-2 { height: 130px; background: linear-gradient(180deg, rgba(41,128,185,0.8), rgba(255,255,255,0.8)); }
+.stair-3 { height: 190px; background: linear-gradient(180deg, rgba(155,89,182,0.8), rgba(255,255,255,0.8)); }
 .stair-4 { height: 260px; background: linear-gradient(180deg, rgba(231,76,60,0.8), rgba(255,255,255,0.8)); box-shadow: inset 0 5px 20px rgba(0,0,0,0.05), 0 0 20px rgba(231,76,60,0.2); border-color: rgba(231,76,60,0.3); }
 .stair-salary { color: #fff; font-weight: bold; font-size: 0.95rem; color: #333; text-shadow: none; }
 
@@ -308,13 +308,13 @@ section { padding: 120px 0; }
 /* Recruit CTA Section */
 .recruit-cta { position: relative; overflow: hidden; padding: 150px 0; }
 .recruit-glow-box {
-    background: linear-gradient(135deg, rgba(25,47,97,0.05), rgba(211,0,55,0.05));
-    border: 1px solid rgba(25,47,97,0.2); border-radius: 24px; padding: 6rem 3rem; text-align: center;
+    background: linear-gradient(135deg, rgba(52,152,219,0.05), rgba(155,89,182,0.05));
+    border: 1px solid rgba(52,152,219,0.2); border-radius: 24px; padding: 6rem 3rem; text-align: center;
     position: relative; box-shadow: 0 0 50px rgba(0,0,0,0.02);
 }
 .recruit-glow-box::before {
     content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; z-index: -1;
-    background: linear-gradient(45deg, #192F61, transparent, #D30037);
+    background: linear-gradient(45deg, var(--neon-blue), transparent, var(--cyber-purple));
     border-radius: 25px; opacity: 0.5; filter: blur(12px);
 }
 .recruit-desc { font-size: 1.2rem; margin: 0 0 3rem; color: var(--text-muted); line-height: 1.8; }
@@ -326,9 +326,9 @@ section { padding: 120px 0; }
 }
 .btn-cyber::before {
     content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(25,47,97,0.1); z-index: -1; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+    background: rgba(52,152,219,0.1); z-index: -1; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
 }
-.btn-cyber:hover { border-color: #fff; box-shadow: 0 5px 20px rgba(25,47,97,0.2); }
+.btn-cyber:hover { border-color: #fff; box-shadow: 0 5px 20px rgba(52,152,219,0.2); }
 .btn-cyber:hover::before { transform: scaleX(1); }
 
 /* Footer */
@@ -551,7 +551,7 @@ footer { padding: 4rem 0 2rem; border-top: 1px solid var(--glass-border); backgr
     font-family: 'Inter', 'Noto Sans JP', sans-serif !important;
     font-size: clamp(3.3rem, 8.5vw, 8.25rem) !important; /* 画面幅に応じてノートPC等でも自動で縮小 */
     font-weight: 800 !important;
-    background: linear-gradient(135deg, #D30037, #192F61) !important; /* 混合の赤青グラデーション */
+    background: linear-gradient(135deg, #FF3B30, #3498DB) !important; /* 混合の赤青グラデーション */
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     letter-spacing: -2px !important;
@@ -634,7 +634,7 @@ footer { padding: 4rem 0 2rem; border-top: 1px solid var(--glass-border); backgr
     font-family: 'Inter', sans-serif;
     font-size: 3rem;
     font-weight: 900;
-    color: rgba(25, 47, 97, 0.15);
+    color: rgba(52, 152, 219, 0.15);
     position: absolute;
     top: 1.5rem;
     right: 2rem;
@@ -737,7 +737,7 @@ footer { padding: 4rem 0 2rem; border-top: 1px solid var(--glass-border); backgr
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(25, 47, 97, 0.1), rgba(211, 0, 55, 0.1));
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
     border: 1px solid var(--glass-border);
     display: flex;
     align-items: center;
@@ -818,7 +818,7 @@ footer { padding: 4rem 0 2rem; border-top: 1px solid var(--glass-border); backgr
     background: #FFFFFF;
     border: 3px solid var(--neon-blue);
     z-index: 2;
-    box-shadow: 0 0 10px rgba(25, 47, 97, 0.5);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
 .timeline-title {
     font-size: 1.2rem;
